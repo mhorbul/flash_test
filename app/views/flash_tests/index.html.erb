@@ -1,0 +1,18 @@
+<h1>Listing flash_tests</h1>
+
+<table>
+  <tr>
+  </tr>
+
+<% for flash_test in @flash_tests %>
+  <tr>
+    <td><%= link_to 'Show', flash_test %></td>
+    <td><%= link_to 'Edit', edit_flash_test_path(flash_test) %></td>
+    <td><%= link_to 'Destroy', flash_test, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New flash_test', new_flash_test_path %>

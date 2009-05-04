@@ -1,0 +1,11 @@
+<%= flash[:error].inspect %>
+<br />
+<br />
+<%= link_to 'flash.now[:]', :action => 'flash_now_without_redirect' %><br />
+<%= link_to 'flash.now[:] with redirect', :action => 'flash_now_with_redirect' %>
+<br /><br />
+<%= link_to 'flash[:]', :action => 'flash_without_redirect' %><br />
+<%= link_to 'flash[:] with redirect', :action => 'flash_with_redirect' %>
+<br /><br />
+<%= link_to 'action => "new"', :action => "new"  %><br />
+<%= link_to 'redirect_to :action => "new"', :action => "index"  %>
