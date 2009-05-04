@@ -1,0 +1,12 @@
+<h1>Editing flash_test</h1>
+
+<% form_for(@flash_test) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @flash_test %> |
+<%= link_to 'Back', flash_tests_path %>
